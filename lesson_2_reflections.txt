@@ -1,0 +1,94 @@
+Remember that the Staging area where you add files to git, is a separate
+entity then the repository or the working directory. To see the differences
+between what is currently stage for commit and the files in the working
+directory simply type git diff --staged.
+
+Another command that is very useful is git reset --hard this command discards
+any changes in the working directory or the staging area.
+
+
+Q: How can you use the staging area to make sure you have one commit per
+logical change?
+
+A: You can easily compare what you have staged for commit with what your
+current working directory contains. This way you can make sure that there
+is only one logical change per commit.
+
+
+Now covering branching on git. Each branch will have it's own name
+The main branch is called the master branch. Git automatically makes
+the master branch for you when you initialize the repository.
+
+Use the command git branch to create and view branches
+Just typing git branch with no arguments shows a list of
+all of the branches the repo has. The branch that you are currently
+on will have a * next to it. If you run git branch with arguments it
+will create a new branch of the name that you have provided.
+To switch to a branch just type git checkout and the name of the branch.
+
+
+Q: What are some situations when branches would be helpful in keeping your
+history organized? How would branches help?
+
+A: This would be helpful when you are trying to add new features, that you
+are afraid might break the program. You can easily organize these new features
+that you are testing into branches. You can think of branches as context
+switching.
+
+
+Git can also help you visualize the branch structure by typing:
+
+    git log --graph --oneline master coins
+
+
+This command is the same as running two different commands:
+git branch new_branch_name
+git checkout new_branch_name
+
+    git checkout -b new_branch_name
+
+
+
+
+
+
+Q: How do the diagrams help you visualize the branch structure?
+
+
+A: It makes it easier to visualize what the code is doing in different
+way it makes it harder to be on the wrong branch after seeing it visualized
+that way.
+
+
+
+How to combine different branches into one branch
+
+
+git merge first_branch_name second_branch_name
+
+git show
+will show the differences between the parent commit
+
+
+to delete a branch type git branch -d coins this will only delete
+the label. The other commits are still accessible from the master branch
+since they have been merged.
+
+
+
+
+Q: What is the result of merging two branches together? Why do we represent
+it in the diagram the way we do?
+
+A: When merging the two branches together we also merge all of the previous
+commits, based on their timestamp.
+
+Q: What are the pros and cons of Git's automatic merging vs. always doing
+merges manually?
+
+
+A: It is nice having git do it automatically for you, it makes it easier to
+change things faster. The only downside is that sometimes it may automatically
+merge the files in a way that the user does not want. Where as always managing
+merge conflicts manually takes more time but you always get the result that
+you wanted.
