@@ -1,0 +1,65 @@
+An extremely useful file command to run that compares to files to see where
+ changes are made is
+
+
+diff -u old_file.js new_file.js
+
+
+
+The above command entered in the terminal will show exactly where
+the changes between the two files are. It is a great way to quickly
+spot differences between two files.
+
+
+Q: How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+A: It would allow me to quickly and easily see where I have made a mistake and
+quickly be able to fix the mistake.
+
+
+To use git to see a history of all of the commits that have been staged
+simply type git log in the directory where the program is.
+
+To see the differences made between commits, simply copy two of the commit ids
+and the type the command git diff with both of the commit ids, this will display
+the changes made between the commits.
+
+
+Another useful command is the git log --stat which gives details about which
+files were changed in each commit.
+
+
+Q: Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+A: The reason that git supports multi file commits unlike google docs, is that in
+programming often many files support each other and cannot run without each of
+those files, and sticking them altogether in one file is simply bad programming
+practice. Thus it makes sense why git allows us to stage multi file commits.
+
+
+Q: How can use the commands git log and git diff to view the history of files?
+
+
+A: You can compare and contrast the changes between each commit in the git log
+by running git diff and giving it the commit id as the arguements.
+
+
+To go to an earlier version of git get the commit id and then type
+git checkout and then the id of the commit.
+
+
+Q: How might using version control make you more confident to make changes that
+could break something?
+
+A: I would be much more confident in my code moving forward knowing that I could
+now easily revert to earlier working versions of the project.
+
+
+Q: Now that you have your workspace set up, what do you want to try using Git
+for?
+
+A: I will use git for all of my projects to enable version control. It makes it
+easy to manage changes and programs, and also display my work on github to both
+colleagues and potential employers.
