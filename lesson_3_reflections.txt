@@ -1,0 +1,6 @@
+Q: When would you want to use a remote repository rather than keeping all your work local?
+
+A: You would do this when you have a large number of collaborators all working on the same project.
+Everyone would be pushing code onto a central repository that you could then pull down from to stay up
+to date on the project.
+
