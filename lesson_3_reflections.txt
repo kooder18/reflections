@@ -32,3 +32,13 @@ stored locally?
 
 A: It allows the user to have access to the last known state, and makes it easier
 to manage merge conflicts, and fast-forward merging.
+
+
+Q: How would you collaborate without using Git or GitHub? What would be easier,
+and what would be harder?
+
+
+A: The best way to collaborate without git, would be using a cloud storage system
+like drop box. To keep every member of the team in sync while working on a project.
+It would be much harder however to see a history of commits and changes, and
+then to go back to an earlier commit in the case of a program error.
