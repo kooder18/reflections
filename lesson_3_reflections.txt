@@ -4,3 +4,31 @@ A: You would do this when you have a large number of collaborators all working o
 Everyone would be pushing code onto a central repository that you could then pull down from to stay up
 to date on the project.
 
+
+Q: Why might you want to pull changes manually rather than having Git
+automatically stay up-to-date with your remote repository?
+
+A: One reason would be if you have several people all working together
+on the same project and the other team is adding a feature that is seperate
+from the main project, and you are not ready to incorporate that feature
+into your local git repository. As you need to test the feature that you are
+working on.
+
+
+Q: Describe the differences between forks, clones, and branches. When would
+you use one instead of another?
+
+
+A: The difference between a clone, and a fork is that a clone is a carbon copy
+that is on your local machine or a new repository. Whereas a fork is a copy that
+points back to the original. This makes it easier to incorporate desired changes
+that may have been introduced to the fork that were not present in the original.
+A branch differs from the other two, by have a new set of git logs, usually you
+make a branch when you want to add a new feature or logical change, that is not
+part of the main program.
+
+Q: What is the benefit of having a copy of the last known state of the remote
+stored locally?
+
+A: It allows the user to have access to the last known state, and makes it easier
+to manage merge conflicts, and fast-forward merging.
