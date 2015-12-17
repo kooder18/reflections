@@ -42,3 +42,15 @@ A: The best way to collaborate without git, would be using a cloud storage syste
 like drop box. To keep every member of the team in sync while working on a project.
 It would be much harder however to see a history of commits and changes, and
 then to go back to an earlier commit in the case of a program error.
+
+
+Q: When would you want to make changes in a separate branch rather than directly
+in master? What benefits does each approach have?
+
+A: You would want to make changes in a separate branch when you are working on
+code that is not production ready. Or are building an experimental feature that
+the code may break the main program. And then after the feature or code is
+production ready, you can merge it into the master branch.
+
+  The benefits of this approach is that your code is compartmentalized and makes
+it easier to share new features with others.
